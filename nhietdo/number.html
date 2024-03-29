@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>number</title>
+</head>
+<body>
+<h2>nhập số</h2>
+<label><input type="text" id="number"></label>
+<button onclick="check()">check</button>
+</body>
+<script>
+  function check() {
+    let n = document.getElementById("number").value;
+    let array = [n];
+    let count = 0;
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] > 10) {
+        count++;
+      }
+    }
+  }
+  document.getElementById('result').innerHTML=count;
+</script>
+</html>
